@@ -1,5 +1,5 @@
 # Import the Animal class from the Animal module
-from Animal import Animal
+from AnimalClasses import Animal
 
 class Lion(Animal):
     # create a static class variable to keep track of the number of lions created
@@ -11,7 +11,7 @@ class Lion(Animal):
     # Create a list of lion names.
     list_of_lion_names = []
 
-    file_path = r'C:\2023spring\2023fall\python\dataFiles\animalNames.txt'
+    file_path = r'C:\Users\Ari\CIT95\ZookeeperChallenge\animalNames.txt'
     with open(file_path, 'r') as file:
         lines = file.readlines()
 
